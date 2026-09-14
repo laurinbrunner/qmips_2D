@@ -1,0 +1,14 @@
+[physics]
+system_size=[ 4, 5 ]
+num_particles=1
+transverse_field=2.0
+max_time=100
+rates=[ 1.0, 1.0, 1.0, 1.0 ]  # jump rates [left, right, up, down]; only ratios matter (normalized by their mean)
+lateral_rate = 0.0  # rate epsilon of the lateral (orthogonal) jump channels; in units of the mean forward rate
+
+[numerics]
+time_step=5e-2
+num_trajectories=1
+measurements=101
+seed=12
+num_random_init_states=5  # Randomly sampled pure non-superposition initial states
